@@ -52,4 +52,25 @@ bookList.configure(yscrollcommand=scrollbar.set)
 # When you scroll the scrollbar "yview" i.e vertical view of bookList will change
 scrollbar.configure(command=bookList.yview)
 
+# Creating Buttons
+
+viewAllBtn = Button(window, text="View All", width=12)
+viewAllBtn.grid(row=2, column=3)
+
+searchEntryBtn = Button(window, text="View Entry", width=12)
+searchEntryBtn.grid(row=3, column=3)
+
+addEntryBtn = Button(window, text="Add Entry", width=12)
+addEntryBtn.grid(row=4, column=3)
+
+updateBtn = Button(window, text="Update", width=12)
+updateBtn.grid(row=5, column=3)
+
+deleteBtn = Button(window, text="Delete", width=12)
+deleteBtn.grid(row=6, column=3)
+
+closeBtn = Button(window, text="Close", width=12)
+closeBtn.grid(row=7, column=3)
+
+
 window.mainloop()
