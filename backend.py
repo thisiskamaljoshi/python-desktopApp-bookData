@@ -44,7 +44,7 @@ def search(title="", author="", year="", isbn=""):  # passing default parameters
 def delete(id):
     conn = sqlite3.connect("books.db")
     cur = conn.cursor()
-    cur.execute("DELETE * FROM book WHERE id=?", (id,))
+    cur.execute("DELETE FROM book WHERE id=?", (id,))
     conn.commit()
     conn.close()
 
